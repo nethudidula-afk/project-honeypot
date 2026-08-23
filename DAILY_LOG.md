@@ -33,7 +33,7 @@ he then took some time to teach me about ssh key-gen, ssh name@IP, tcpdump, and 
 
 ## 2026-08-23
 
-i reflect upon the day before yesterday, as vajira managed to find a vulnerability and scare me.
+i reflect upon the day before yesterday, as vajira managed to find a vulnerability and perform a log injection and scare me. 
 <img width="1877" height="828" alt="Screenshot 2026-08-23 180820" src="https://github.com/user-attachments/assets/964ec2bd-d412-491e-82f4-d432c0182a39" />
 this pointed out that once again, i am still learning, and i was no where near skilled.
-we also discussed a bit more into weaknesses of the honeypot i made, then taught me a bit about log injection 
+we also discussed a bit more into weaknesses of the honeypot i made, then taught me a bit about log injection. 
