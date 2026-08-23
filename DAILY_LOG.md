@@ -1,13 +1,6 @@
-## background
-
-hello, i am Nethu Liyanagunawardana and i am a tech, cyber security and hacking enthusiast. i play around with cyber security and attack tools and play around fixing computers. 
-in early august, 2026, i met Vajira Ginneliya, an experienced software engineer working in the Financial Technology domain. i mentioned my interest in cyber security, and hacking. and showed him a 15 year old computer that i had fixed and run kali linux on. then i proceed to ask if he would guide me through a security related project.
-he suggested a variety of ideas which i decided to build the honey pot idea he presented, and a daily stand-up where i can ask questions about things i didn't understand.
-
-
 ## 2026-08-17
 
-we had our first discussion about the project, and vajira decided to make it a week long project, from today, monday to the 24th. so i first researched.
+me and vajira had our first discussion about the project, and vajira decided to make it a week long project, from today, monday to the 24th. so i first researched.
 I learned what honey pots are and learn how they work. After a bit of YouTube and chatGPT, and help from my vajira, i had figured out roughly what i needed to make a honey pot. also, since i am only somewhat proficient in python, i needed to figure out how to use logging, socket, and datetime. so i started learning what each of them are and how they work using YouTube videos and Coursera. then, i had to research about which ports are safe to open with out giving access in to anything important, so i could use it for tests. for this, i decided on port 2222.
 
 ## 2026-08-18
