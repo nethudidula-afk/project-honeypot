@@ -38,7 +38,7 @@ he then took some time to teach me about ssh key-gen, ssh name@IP, tcpdump, and 
 
 i reflect upon the day before yesterday, as vajira managed to find a vulnerability and perform a log injection and scare me. 
 <img width="1877" height="828" alt="Screenshot 2026-08-23 180820" src="https://github.com/user-attachments/assets/964ec2bd-d412-491e-82f4-d432c0182a39" />
-the weakness happened to be: data 
+the weakness happened to be:  
 <img width="925" height="74" alt="image" src="https://github.com/user-attachments/assets/247cfa11-f411-454f-b523-4fa42b46cb04" />
 
 where the logging doesn't look for embedded newlines, and .strip() doesn't sanitise the code, it removes the white space at the end of the code, not the \n in the middle.                                
