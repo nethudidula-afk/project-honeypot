@@ -24,6 +24,9 @@ i read a bit more about the legalities involved as i was confused as to the time
 
 i tried my first attempt, which could only open port 2222, and close it successfully, which worked. then i moved on to logging the date and time and the IP of the attacker, which proved to be quite difficult as i had forgotten how to format things. but eventually, i made a prototype that could listen into port 2222, and log it in a file, along with the date, time and the IP of the attacker. the problem was that with a bit of tinkering, an outsider can get into my account, then system32, and that was a very big problem.
 <img width="608" height="95" alt="image" src="https://github.com/user-attachments/assets/76e19896-58cd-4518-9461-af9557d75407" />
+<img width="931" height="874" alt="Screenshot 2026-08-23 200817" src="https://github.com/user-attachments/assets/bdf33fd3-92c4-4dd1-9916-76d80a4f8660" />
+<img width="1051" height="455" alt="Screenshot 2026-08-23 200826" src="https://github.com/user-attachments/assets/cfef718b-3600-403a-ae28-261c0ca34d69" />
+
 
 
 ## 2026-08-22
@@ -35,5 +38,11 @@ he then took some time to teach me about ssh key-gen, ssh name@IP, tcpdump, and 
 
 i reflect upon the day before yesterday, as vajira managed to find a vulnerability and perform a log injection and scare me. 
 <img width="1877" height="828" alt="Screenshot 2026-08-23 180820" src="https://github.com/user-attachments/assets/964ec2bd-d412-491e-82f4-d432c0182a39" />
+the weakness happened to be: data = client_socket.recv(1024)
+                                    if data:
+                                      payload_msg = f"PAYLOAD FROM {attacker_ip}: {data.decode('utf-8', errors='ignore').strip()}"
+                                      print(f"[!] {payload_msg}")
+                                      logging.info(payload_msg)
+where the logging doesnt look for embedded newlines.                                  
 this pointed out that once again, i am still learning, and i was no where near skilled.
 we also discussed a bit more into weaknesses of the honeypot i made, then taught me a bit about log injection. 
