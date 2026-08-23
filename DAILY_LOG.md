@@ -38,11 +38,9 @@ he then took some time to teach me about ssh key-gen, ssh name@IP, tcpdump, and 
 
 i reflect upon the day before yesterday, as vajira managed to find a vulnerability and perform a log injection and scare me. 
 <img width="1877" height="828" alt="Screenshot 2026-08-23 180820" src="https://github.com/user-attachments/assets/964ec2bd-d412-491e-82f4-d432c0182a39" />
-the weakness happened to be: data = client_socket.recv(1024)
-                                    if data:
-                                      payload_msg = f"PAYLOAD FROM {attacker_ip}: {data.decode('utf-8', errors='ignore').strip()}"
-                                      print(f"[!] {payload_msg}")
-                                      logging.info(payload_msg)
-where the logging doesnt look for embedded newlines.                                  
+the weakness happened to be: data 
+<img width="925" height="74" alt="image" src="https://github.com/user-attachments/assets/247cfa11-f411-454f-b523-4fa42b46cb04" />
+
+where the logging doesn't look for embedded newlines, and .strip() doesn't sanitise the code, it removes the white space at the end of the code, not the \n in the middle.                                
 this pointed out that once again, i am still learning, and i was no where near skilled.
 we also discussed a bit more into weaknesses of the honeypot i made, then taught me a bit about log injection. 
